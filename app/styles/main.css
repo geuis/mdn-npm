@@ -1,3 +1,39 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 body {
-  padding: 20px;
+  font-size: 16px;
+  width: 300px;
+  background: #da500e;
+  color: #fff;
+  
+  font-family: 'Open Sans', OpenSans, sans-serif;
+  letter-spacing: -0.02em;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  padding: 0;
+  margin: 0 0 8px 0;
+  font-size: 14px;
+}
+
+a {
+  font-weight: 600;
+  color: #fff;
+  outline: none;
+}
+
+body > div {
+  font-size: 12px;
+  margin-bottom: 10px;
 }

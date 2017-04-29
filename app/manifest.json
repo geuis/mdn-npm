@@ -1,8 +1,8 @@
 {
-  "name": "__MSG_appName__",
-  "version": "0.0.1",
+  "name": "mdn-npm",
+  "version": "1.0.0",
   "manifest_version": 2,
-  "description": "__MSG_appDescription__",
+  "description": "Search both MDN and NPM from the url omnibox.",
   "icons": {
     "16": "images/icon-16.png",
     "128": "images/icon-128.png"
@@ -24,7 +24,7 @@
       "19": "images/icon-19.png",
       "38": "images/icon-38.png"
     },
-    "default_title": "mdn-npm",
+    "default_title": "MDN and NPM Search",
     "default_popup": "popup.html"
   },
   "omnibox": {
