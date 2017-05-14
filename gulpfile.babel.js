@@ -62,7 +62,7 @@ gulp.task('html',  () => {
     .pipe(gulp.dest('dist'));
 });
 
-gulp.task('chromeManifest', () => {
+gulp.task('chromeManifest', (cb) => {
   return gulp.src('app/manifest.json')
     .pipe($.chromeManifest({
       buildnumber: true,
@@ -75,9 +75,9 @@ gulp.task('chromeManifest', () => {
   }))
   .pipe($.if('*.css', $.cleanCss({compatibility: '*'})))
   .pipe($.if('*.js', $.sourcemaps.init()))
-  .pipe($.if('*.js', $.uglify()))
-//  .pipe($.if('*.js', $.sourcemaps.write('.')))
-//  .pipe(gulp.dest('dist'));
+//  .pipe($.if('*.js', uglify()))
+  .pipe($.if('*.js', $.sourcemaps.write('.')))
+  .pipe(gulp.dest('dist'));
 });
 
 gulp.task('babel', () => {
